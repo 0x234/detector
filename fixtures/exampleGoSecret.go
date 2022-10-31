@@ -2,6 +2,9 @@ package exampleSecret
 
 import "fmt"
 
+// Deliberately insecure Go source code to verify the detection
+// rule is working.
+
 func connectToAws() {
 	sess, err := session.NewSession(&aws.Config{
 		Region:      aws.String("us-west-2"),
