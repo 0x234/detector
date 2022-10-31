@@ -72,7 +72,7 @@ func scanSource(rules []ApplicationRule, source []string) {
 			// Open the source code file
 			body, err := ioutil.ReadFile(source[s])
 			if err != nil {
-				l.Error("unable to read file: %v", err)
+				l.Error("Unable to read file: ", err)
 				continue
 			}
 			// Convert the byte stream to a string
@@ -127,7 +127,7 @@ func main() {
 		case "Go":
 			goRules = append(goRules, rules[f])
 		default:
-			l.Warn("Unknown rule type %s", rules[f].Language)
+			l.Warn("Unknown rule type: ", rules[f].Language)
 		}
 	}
 
