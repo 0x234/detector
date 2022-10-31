@@ -1,0 +1,6 @@
+---
+example: "credentials.NewStaticCredentials(\"20664672\",\"hunter2\",\"89y32f9889dsfsd98h89f\")"
+language: Go
+library: AWSSDK
+ruleName: "Amazon AWS Static Credential"
+secretPattern: "credentials\\.NewStaticCredentials[\\s\\S]*\\(([\\s\\S]*\".*\")[\\s\\S]*,([\\s\\S]*\".*\"),([\\s\\S]*\"[a-zA-Z0-9_]*\")\\)"

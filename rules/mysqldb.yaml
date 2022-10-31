@@ -1,0 +1,6 @@
+---
+ruleName: "MySQLdb Database Connection String"
+example: "MySQLdb.connect(\"localhost\",\"admin\",\"test123\",\"production\")"
+language: Python
+library: MySQLdb
+secretPattern: "MySQLdb\\.connect[\\s\\S]*\\(([\\s\\S]*'.*')[\\s\\S]*,([\\s\\S]*'.*')[\\s\\S]*,([\\s\\S]*'.*'),('.*')\\)"
